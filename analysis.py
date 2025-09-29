@@ -3,6 +3,12 @@
 # Pandas - Pandas is a Python library that provides extensive means for data analysis. Data scientists often work with data stored in table formats like .csv,
 
 import pandas as pd
+import matplotlib
+
+
+# Use a non-GUI backend to avoid macOS GUI thread problems
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 
 def load_students(path):
