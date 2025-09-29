@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Student Dashboard</title>
+<style>
+body{font-family: Arial, Helvetica, sans-serif; padding:20px}
+table{border-collapse:collapse; width:100%}
+th,td{border:1px solid #ddd; padding:8px}
+th{background:#f4f4f4}
+</style>
+</head>
+<body>
+<h1>Student Progress Dashboard</h1>
+<div id="summary"></div>
+<h2>Students</h2>
+<table id="students-table">
+<thead><tr><th>ID</th><th>Name</th><th>Stream</th><th>Math</th><th>Science</th><th>English</th><th>Avg</th></tr></thead>
+<tbody></tbody>
+</table>
+<h3>Average by Stream (image)</h3>
+<img src="/data/avg_by_stream.png" alt="avg by stream" id="chart" style="max-width:400px"/>
+
+
+<script>
+async function init(){
+const s = await fetch('/api/students').then(r=>r.json())
+const summary = await fetch('/api/summary').then(r=>r.json())
+
+
+const tbody = document.querySelector('#students-table tbody')
+s.forEach(st=>{
+const avg = ((st.math + st.science + st.english)/3).toFixed(2)
+const tr = document.createElement('tr')
+tr.innerHTML = `<td>${st.id}</td><td>${st.name}</td><td>${st.stream}</td><td>${st.math}</td><td>${st.science}</td><td>${st.english}</td><td>${avg}</td>`
+tbody.appendChild(tr)
+})
+
+
+document.getElementById('summary').innerText = `Overall avg: ${summary.overall_avg} | Pass rate: ${summary.pass_rate_percent}%`;
+}
+init()
+</script>
+</body>
+</html>

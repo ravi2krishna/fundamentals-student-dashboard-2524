@@ -1,0 +1,689 @@
+Fundamentals - 2524
+===================
+
+17th Sep
+========
+
+    -> Application 
+
+        -> An Application is a software program designed to perform a task
+
+        -> https://www.myntra.com/ : ecommerce / shopping website
+
+        -> https://www.instagram.com/ : social media application 
+
+        -> google.com/maps : gps based navigation application
+
+    -> Application Types 
+
+        -> Desktop Applications
+            -> Designed to run on a single machine / only one user can use at a time
+            -> Installed on Laptops / Desktops 
+            -> MS Suite (excel, ppt, word etc) 
+            -> Doesn't need internet to work
+
+        -> Web Applications
+
+            -> An Application that uses internet and accessed via browser 
+
+            -> Multiple Users can use simultaneously 
+
+            -> We as users, will not install Web Applications
+
+            -> Web Applications are deployed on Servers 
+
+            -> Web Applications use Client - Server Architecture 
+
+                -> Static Applications
+
+                    -> Static : Fixed / Constant / Doesn't change 
+
+                    -> Static Applications have fixed content for any user
+
+                    -> https://hitam.org/ 
+
+                        -> college websites
+
+                        -> portfolio websites 
+
+                        -> etc 
+
+                -> Dynamic Applications
+
+                    -> Dynamic : Not Fixed / Not Constant / Does change 
+
+                    -> Dynamic Applications have different content for different users
+
+                    -> https://gmail.com/ 
+
+                        -> ecommerce sites 
+                        -> social media sites
+                        -> etc 
+
+        -> Mobile Applications 
+            
+            -> Mobile Applications are installed on mobile devices smartphones / tablets 
+
+            -> Installed from Play store / App Store
+
+            -> Mobile Applications will utilize, hardware components from mobile devices
+
+                -> Mobile has antenna : make calls
+                -> Mobile has GPS : for navigation
+                -> Mobile has Camera : for taking videos / pictures 
+                -> etc 
+
+            -> Calculator : no need of internet, directly use it as desktop application 
+
+            -> Gmail : need internet and also authentication 
+
+            
+
+Dynamic Applications
+
+    -> Mostly we work with Dynamic Applications
+
+    -> Because of 
+
+        -> https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites
+    
+    -> One thing the most visited websites have in common is that they are dynamic websites
+
+    -> Their development typically involves 
+        
+        -> Server-side coding 
+        -> Client-side coding  
+        -> Database technology
+
+    -> The above is called Three Tier Architecture Applications 
+
+        -> Frontend Technologies
+
+            -> Application Layer thats shows user interface (look & feel)
+
+            -> Takes Input & Displays Output 
+
+            -> Technologies : HTML, CSS, JS, REACT 
+
+        -> Backend Technologies 
+
+            -> Application Layer that handles Business Logics (action submit/login/etc)
+
+            -> Processing Input & Output 
+
+            -> Technologies : Python, Java, C#, PHP 
+
+        -> Database Technologies
+
+            -> State of the Application (Application Data)
+
+            -> User's Data (Name, First Name, Last Name, Email, Mobile Number)
+
+            -> Softwares : MySQL, Postgres, SQL Server etc 
+
+
+18th Sep
+========
+
+    -> We want to develop Dynamic Web Application 
+
+    -> To Start Working with Any Application, we need to follow process 
+
+    -> Software Development Life Cycle (SDLC / ALM)
+
+        -> SDLC is a process follows by software development teams(orgs) to Design, Develop & Test 
+                high quality softwares 
+
+        -> SDLC has multiple phases and applicable for any kind of application (Desktop To Modern AI System)
+
+            -> Requirement 
+            -> Analysis 
+            -> Design 
+            -> Code 
+            -> Build 
+            -> Test 
+            -> Release 
+            -> Deploy
+            -> Maintain / Monitor 
+
+        -> Requirement : Dynamic Web Application (Problem Statement)
+
+            -> LMS Application (Requirement given by training institute (client))
+
+                -> Admin Role : Create Course, Update Course, Delete Course
+                -> Trainer Role : Update Course 
+                -> Student Role : View Courses 
+
+        
+        -> Analysis : Business Analyst ==> connect with stake holder team 
+
+            -> Business problem ==> possible solutions ==> stake holder team
+
+                -> conclude the solution to be built 
+
+                    -> Admin Role : Create Course, Update Course, Delete Course
+                    -> Trainer Role : Update Course 
+                    -> Student Role : View Courses 
+
+                -> Admin Role : 1st Quarter 
+                -> Trainer & Student Role : 2nd Quarter 
+
+        -> Design : System Architects, System Design, Senior Architects etc 
+
+            -> System Architecture(backend) is ready 
+            -> UI / UX (fronted)
+            -> Database Design 
+
+        -> Code : Software Developers / Programmers etc 
+
+            -> Use appropriate language to start building the system 
+
+            -> We use stacks (Java Stack, Python Stack, JS Stack)
+
+                -> Java Stack : REACT (frontend) + Java Spring (backend) + MySQL (database)
+
+                -> Python Stack : REACT (frontend) + Python Django (backend) + Postgres (database)
+
+                -> JS Stack : REACT (frontend) + Nodejs (backend) + Mongodb (database)
+
+                -> Above application style 
+
+                    -> Web Services(REST API's) ==> micro services 
+
+                -> CODE 
+
+                    -> Source Code (Human Readable Code) ==> Developers will write this 
+
+                        -> App.py / App.java 
+
+                        -> Version Control System & Source Code Management Systems
+
+                            -> Git & GitHub
+
+                    -> Binary Code (Machine Readable Code) ==> Generated by a process called as BUILD
+
+                        -> App.exe 
+
+                        -> Binary Management Tools 
+
+                            -> Amazon S3 / Microsoft BLOB / Jfrog 
+        
+        -> Build : Process which converts Source Code To Binary Code By Developers(Laptops) & DevOps Team (Servers) 
+
+            -> Build Tools (based on technology, build tools will vary)
+
+            -> Java Apps : maven, gradle etc
+            -> Python Apps : pybuilder, pip etc 
+            -> C Apps : make 
+
+            -> System.out.println("Java"); After build ==> 10101010101 (Binary Code)
+
+
+19th Sep
+========
+
+    -> Test (QA Domain ==> Software Tester, QA Engineers, QA Leads)
+
+        -> Requirement ==> As per your code is it working according to given Requirement or not 
+
+        -> No Testing ==> Features might not work as expected 
+
+        -> Expected Result == Actual Result (Test Passed )
+
+        -> Expected Result != Actual Result (Test Failed )
+
+        -> Types Of Testing 
+
+            -> Unit Testing (Developers Responsibility)
+            -> Integration Testing 
+            -> Functional Testing 
+            -> Performance Testing 
+            -> etc 
+
+
+    -> Release 
+
+        -> LMS Payment Integration 
+
+            -> Small Institute : Online Based LMS with just Cash Payment (v1)
+
+                -> $3000
+
+            -> Medium Institute : Online Based LMS with Net Banking / Card (v2)
+
+                -> $4000
+
+            -> Large Institute : Online Based LMS with Net Banking / Card / UPI (v3)
+
+                -> $5000
+
+        -> Product Release Cycle 
+
+            -> F1 ==> Start ==> Development (5 Developers)
+
+                -> Completed F1 
+
+                -> Test F1 While (Few Bugs) ==> Bugs Fixed ==> Test Passed 
+
+            -> F2 ==> Start ==> Development (5 Developers) 
+
+                -> Working On F2 
+
+                -> 3 Developers Working On F2 
+                -> 2 Developers Fixing Bugs On F1
+
+
+    -> Deploy (Cloud & DevOps ) ==> Developers (before fullstack ==> 0, after fullstack ==> 40, Docker -> CI / CD)
+
+        -> Making the application available to appropriate customers and making sure 
+            the application is running smoothly without any issues 
+
+            -> Server should have Operating System Installed
+            -> Server should have Runtime installed (Java, Python, Databases )
+
+            -> After deploying target customers can access appropriate versions/features of application 
+
+            -> 2023 (100000 customers) (Hardware)
+
+    
+    -> Maintain / Monitor (Cloud & DevOps)
+
+        -> 2025 (100000000 customers) (Hardware) ==> App Crashes 
+
+        -> Adding New Server 
+        -> Installing Operating System 
+        -> Installing Runtime 
+        -> Upgrade Storage 
+        -> Upgrade Memory (RAM)
+        -> Upgrade CPU 
+
+
+22nd Sep
+========
+
+    -> SDLC is a "process" follows by software development teams(orgs) to Design, Develop & Test 
+                high quality softwares 
+
+    -> SDLC Models 
+
+        -> Waterfall model (legacy)
+        -> Agile Model (*) (developer friendly)
+        -> DevOps Model (operations friendly)
+
+    -> Any Model (High Level)
+
+        -> Requirement -> Code -> Test -> Deploy 
+
+    -> Waterfall Model
+
+        -> Waterfall model is Legacy (1980's)
+
+        -> Fixed Time For each phase 
+
+        -> Requirement : Problem 
+
+            -> Code : 6 months of coding 
+
+                -> Test : 2 months of testing 
+
+                    -> Deploy : 1 month of deployment 
+
+        -> NOTE : We cannot change the Requirement or add new features in between 
+
+        -> NOTE : No innovation 
+
+    -> Agile Model 
+
+        -> Agile : Flexible 
+
+        -> Agile model is Modern (2000's)
+
+        -> Flexible Time For each phase 
+
+        -> Sprint Based Work (Sprint is 1/2 weeks work)
+
+        -> Requirement : Problem 
+
+            -> Code : Fast 
+
+                -> Test : Fast 
+
+                    -> Deploy : SLOW
+
+        -> NOTE : will be done in 1/2 weeks 
+
+        -> Agile : More Towards Development
+
+        -> ecommerce application
+
+            -> Dev : agile [ build application & test application ]
+
+                   : skills (programming - java, python, selenium, manual testing)
+
+            -> Ops : [ build infrastructure & deploy applications ]
+
+                   : skills (server admins(linux,win,kernel), storage, database, network, security etc)
+
+            
+            -> Development (Faster/Agile)                           -> Operations (Slow/Not Agile)
+
+                -> sprint 1     ->      Completed                       -> doing infra setup (good)
+
+                -> sprint 2     ->      Completed                       -> deployed using old schema 
+                    (db schema changed)                                     (what changes to be made not clear)
+
+                -> sprint 3     ->      Completed                       -> sprint 2 (ops work)
+
+                -> sprint 4     ->      Completed                       -> sprint 2 (ops work)
+
+        
+        -> In Agile we got faster with development, but operations were not able to keep up with development
+
+        -> Whats the fix ? 
+
+            -> Operations to be fixed 
+
+                -> Agile Operations (DevOps Principals) 
+
+                    -> After 2015 we started hearing devops a lot 
+
+                        -> Lot of new Tools and Technologies Evolved 
+
+                        -> Cloud Infrastructure (Operations Became Lot Faster)
+
+                            -> AWS (Amazon Web Services)
+                            -> AZURE (Microsoft)
+                            -> etc 
+
+                        -> CI - CD (Continuous Integration & Continuous Deployment Tools)
+
+                            -> Jenkins 
+                            -> Bamboo 
+                            -> etc 
+
+                        -> Containerization 
+
+                            -> Docker 
+
+                        -> Orchestration 
+
+                            -> Kubernetes 
+
+    -> DevOps = Agile Development + Agile Operations
+
+
+        -> New DevOps (DS/AI) = ML Ops 
+
+
+    -> Req -> Code -> Build -> Test -> Release -> Deploy -> Monitor (Any App)
+
+
+23rd Sep
+========
+
+    -> Requirement : Build Web Application
+
+    -> Project : Repository 
+
+        -> Repository contains CODE + Images + Documents etc 
+
+        -> Create folder : name it as web_project (not good practice)
+
+        -> As Developers, when you write code 
+
+            -> Not Working 
+            -> Partially Working
+            -> Working 
+
+        -> Using Repositories we can separate the code into multiple logical places 
+
+        -> Using Repositories we can achieve code tracking 
+
+            -> Code Tracking : Capture which developer, did what task 
+                               Why tracking ?
+
+                                    -> Who did change ?
+                                    -> What change did they do ?
+                                    -> When the change was done ?
+
+            -> We need Repositories 
+
+                -> CODE + TRACKING 
+                -> 
+
+            -> To create Repositories, we are going to use GitHub Platform 
+
+            -> Repositories contain a project's files and version history 
+
+                -> version is unique identify for a change : commit id 
+                
+                -> commit id helps 
+
+                    -> Who did change ?
+                    -> What change did they do ?
+                    -> When the change was done ?
+
+
+    -> Req -> Code -> Build -> Test -> Release -> Deploy -> Monitor (Any App) (Any Domain)
+
+        -> Req (*)
+
+        -> Code(Version Control Systems)
+            -> Client : Git 
+            -> Server / Platform : GitLab / GitHub 
+
+24th Sep
+========
+
+    -> Any Developer (Fullstack, AI, DS, DA, DevOps)
+
+        -> Code(Version Control Systems)
+            -> Client : Git (Version Control)
+            -> Server / Platform : GitLab / GitHub (Remote Storage)
+
+        -> dev-A (index page)
+
+            -> i'll start writing code [ in laptop / workstation ]
+
+            -> location is Repository (on github) == Remote Repository (common for all developers)
+
+            -> I'll get Repository from GitHub to My laptop
+
+                -> Cloning Repository [ Clone - Making identical copies ]
+
+                -> Project is in my Laptop (Local Repository)
+
+                -> As a developer, will write new code in Local Repository
+
+            -> I cloned 
+
+                -> Stand alone (using gitbash)
+
+                -> Using an IDE (Integrated Development Environment)
+
+                    -> IDE helps is writing code (code editor with advanced features)
+
+                        -> syntax highlight 
+                        -> auto code completion
+                        -> extensions / plugins support 
+
+                    -> Visual Studio Code (IDE)
+
+        -> Using IDE with help of git, we cloned a Repository from GitHub 
+
+        -> Code is categorized into 
+
+            -> Working Area ( started with new file )
+            -> Staging Area ( partially working )
+            -> Local Area   ( perfectly working )
+
+        -> Git Configuration 
+
+            -> Open GitBash 
+                -> git config --global user.name github_user_id
+                -> git config --global user.email github_email
+
+            -> Write Code
+            -> Stage Code
+            -> Commit Code
+
+        -> Now code is present inside Local Repository
+
+        -> Pushing : Update code from Local Repository to Remote Repository
+
+
+        -> dev-B (contact page)
+
+        -> dev-C (payment page)
+
+    -> Req -> Code -> Build -> Test -> Release -> Deploy -> Monitor (Any App) (Any Domain)
+
+        -> Req (*)
+        -> Code (*)
+
+
+25th Sep
+========
+
+    -> Req -> Code -> Build -> Test -> Release -> Deploy -> Monitor (Any App) (Any Domain)
+
+        -> Req (*)
+        -> Code (*) ==> In GitHub (Repository) (Only Source Code)
+
+            -> Source Code (Human Readable)
+            -> Binary Code (Machine Readable)
+    
+    -> Build 
+
+        -> A process where we convert Source Code (Human Readable) to Binary Code (Machine Readable)
+
+            -> Developer is Responsible for Build in workstation/laptop 
+
+            -> Cloud & DevOps is Responsible for Build in Servers 
+
+        -> Build Tools 
+
+            -> Maven : Java Based Projects
+            -> NPM : Javascript Based Projects
+            -> PIP : Python Based Projects 
+
+    -> Application Code : https://github.com/ravi2krishna/react-app.git
+
+    -> Build Process (Javascript App)
+
+        -> Get Source Code 
+            -> git clone https://github.com/ravi2krishna/react-app.git
+        -> Setup Build Tools 
+            -> https://nodejs.org/en/download/package-manager/all
+        -> Build Steps 
+            -> npm install && npm run build
+
+    -> Cloud Provides Servers 
+
+        -> In AWS Servers are called as EC2 Instance 
+
+        -> We Created Server (Hardware Allocated For Your Application)
+
+        -> We Need Softwares 
+
+            -> Web Servers : Nginx, Apache, IIS 
+
+            -> App Servers : Tomcat, Weblogic, Jboss 
+
+            -> Database Servers : Oracle, Postgres, MongoDB 
+
+        -> To Run / Deploy We need Server Softwares 
+
+            -> Javascript : Web Applications (Frontend)
+
+            -> We need Web Server (Nginx is a web server)
+
+                -> sudo apt update -y
+                -> sudo apt install -y nginx
+
+        -> Deploying 
+
+            -> Taking the built product and hosting inside server software 
+
+                -> sudo cp -r build/* /var/www/html
+
+        [fullstack/data analyst/ds/ai]
+-> Req -> Code -> Build -> Test -> Release -> Deploy(cloud&devops)
+
+    -> New Req : Change Brand (Edu)
+
+26th Sep
+========
+
+    -> SDLC (Application)
+
+        -> Fullstack Developer (Code - Build - Min Deployment)
+
+            -> HTML / CSS / JS
+            -> Java / Python / C # 
+            -> Postgres / MySQL / Mongo DB
+
+        -> Cloud DevOps (Cloud, Servers, Monitor)
+
+            -> AWS / AZURE / Google Cloud
+
+        -> Testing (QA Team)
+        
+            -> App is working as expected, without causing any issues
+
+            -> Expected Result == Actual Result 
+
+            -> Unit Testing (Developers)
+            -> Manual Testing 
+            -> Automation Testing (Some repetitive tasks) 
+                { Tools : Selenium }
+            -> Performance Testing 
+                    -> Login Page (time)(resource)
+                    -> Payment Page (time)(resource)
+            -> Load Testing
+                    -> 10 Users logged in (accessing videos) - any issues
+                    -> 100 Users logged in (accessing videos) - any issues
+                    -> 10000 Users logged in (accessing videos) - any issues
+
+
+        -> Releasing 
+
+            -> Some Binary Storage Server 
+
+                -> Nexus - Cloud Storage 
+
+            -> Making the useable product stored - at any point of time we can access
+
+        
+29th Sep
+========
+
+    -> Build a simple web application
+
+    -> A small Data Analysis Pipeline that shows 
+
+        -> Student Scores 
+        -> Class Summary Statistics 
+        -> Simple Visualizations 
+
+    -> This Project helps ypu understand how SDLC connects different domains 
+
+    
+    -> Requirement 
+
+        -> Upload or Read a small csv file of student scores (students.csv)
+
+        -> Build a simple Dashboard (HTML) listing all students and their scores
+
+        -> Build a server API which returns student data and summary in JSON (average, pass rate)
+
+        -> Provide a small data analysis script, that produces a summary of Statistics and Simple Chart (PNG)
+
+
+    -> Analysis 
+
+        -> Data Model : Student (id, name, stream, math, science, english)    
+        -> Small dataset (10-20 rows) so students can read and reason about it 
+        -> Analysis : per stream average, overall average, pass rate (>=40 per subject), top 3 students 
+
+    
