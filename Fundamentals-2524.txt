@@ -687,3 +687,14 @@ Dynamic Applications
         -> Analysis : per stream average, overall average, pass rate (>=40 per subject), top 3 students 
 
     
+    -> student.csv ==> Stakeholder (Institute Data)
+
+    -> index.html ==> Frontend (Frontend Developer / Fullstack Developer)
+
+    -> testing using selenium ==> automation testing (QA Engineer)
+
+    -> analysis.py ==> Data Analyst(Give Visuals) ==> Data Science (Based On historical data predictions)
+
+    -> app.py ==> Backend (Backend Developer / Fullstack Developer)
+
+    -> Dockerfile ==> Operations Team (Cloud / DevOps Engineer)
